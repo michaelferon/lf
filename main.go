@@ -70,6 +70,7 @@ func exportEnvVars() {
 		fmt.Fprintf(os.Stderr, "getting current directory: %s\n", err)
 	}
 	os.Setenv("OLDPWD", dir)
+	os.Setenv("OLD_PWD", dir)
 
 	level, err := strconv.Atoi(envLevel)
 	if err != nil {

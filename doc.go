@@ -168,6 +168,7 @@ The following environment variables are exported for shell commands:
     id
     PWD
     OLDPWD
+    OLD_PWD
     LF_LEVEL
     OPENER
     EDITOR
@@ -830,9 +831,9 @@ Id of the running client.
 
 Present working directory.
 
-    OLDPWD
+    OLDPWD, OLD_PWD
 
-Initial working directory.
+Initial working directory, where the latter exists for compatibility with shells, such as zsh, that overwrite the value of OLDPWD.
 
     LF_LEVEL
 
